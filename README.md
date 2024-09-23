@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm Gideon, a student Information Technology at NHL Stenden in Emmen.<br>I'm doing a lot of projects in different frameworks, like Flutter,  UWP, .net MAUI and HTML/PHP.<br>Later on, I want to start working in other .NET frameworks, like ASP.net and .net MAUI Blazor.<br>
+I'm Gideon, a student Information Technology at NHL Stenden in Emmen.<br>I'm doing a lot of projects in different frameworks, like Flutter,  UWP, .net MAUI and HTML/PHP.<br>Later on, I want to start working in other .NET frameworks, like ASP.NET and .NET MAUI Blazor.<br>
 
 
 ## 🌐 Socials:
