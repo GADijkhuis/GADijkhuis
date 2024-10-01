@@ -4,7 +4,7 @@ I'm Gideon, a student Information Technology at NHL Stenden in Emmen.<br>I'm doi
 
 ## 🌐 Socials:
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/gideon.dijkhuis) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/g_dijkhuis) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gideon-dijkhuis-69a18628a/)
-[![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me-green?style=flat-square&logo=gmail&logoColor=FFFFFF&labelColor=3A3B3C&color=62F1CD)](mailto:dijkhuis.g.a@outlook.com)
+[![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me-green?logo=gmail&logoColor=FFFFFF&labelColor=3A3B3C&color=62F1CD)](mailto:dijkhuis.g.a@outlook.com)
 
 
 # 💻 Tech Stack:
