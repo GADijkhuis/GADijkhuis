@@ -1,14 +1,22 @@
 .btn {
     padding: var(--margin-s);
-    gap: var(--margin-s);
-
+    
     border-radius: var(--border-r-s);
 
     background-color: var(--background-secondary);
     color: var(--text-secondary);
 
+    a {
+        color: var(--text-secondary);
+    }
+
     &__dark {
         background-color: var(--background-tint);
-        color: var(--text-tint);
+
+        a {
+            color: var(--text-tint);
+        }
     }
+    
+
 }

@@ -1,3 +1,6 @@
-<div class="btn d-flex flex-center" [class.btn__dark]="dark">
-    <ng-content></ng-content>
+<div class="btn" [class.btn__dark]="dark">
+    <a [href]="to" target="_blank" rel="noopener"
+    class="d-flex flex-center gap-s">
+        <ng-content></ng-content>
+    </a>
 </div>

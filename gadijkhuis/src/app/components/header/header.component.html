@@ -1,7 +1,17 @@
 <div class="header d-flex flex-column flex-center">
-    <div class="header__container d-flex flex-column flex-align-center">
-        <img ngSrc="/assets/images/GADijkhuis.svg" [width]="80" [height]="56"/>
+    <div class="header__container d-flex flex-column flex-align-center gap-m">
+        <img ngSrc="/assets/images/GADijkhuis.svg"
+        alt="GADijkhuis" [width]="80" [height]="56"/>
         <h1>GADijkhuis</h1>
-        <app-button href=""/>
+        <div class="d-flex flex-center gap-s">
+            <app-button [to]="Links.GITHUB">
+                <img src="/assets/icons/GH.svg" alt="GitHub"/>
+                GitHub
+            </app-button>
+            <app-button [to]="Links.LINKEDIN">
+                <img src="/assets/icons/LinkedIn.svg" alt="Linkedin"/>
+                LinkedIn
+            </app-button>
+        </div>
     </div>
 </div>

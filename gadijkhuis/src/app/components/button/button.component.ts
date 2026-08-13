@@ -7,6 +7,6 @@ import { Component, Input, input } from '@angular/core';
   styleUrl: './button.component.scss',
 })
 export class ButtonComponent {
-  @Input({ required: true }) href!: string 
+  @Input({ required: true }) to!: string 
   @Input() dark: boolean = false 
 }

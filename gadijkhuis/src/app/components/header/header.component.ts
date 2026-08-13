@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from "@angular/common";
 import { ButtonComponent } from "../button/button.component";
+import { Links } from "../../models/links/links";
 
 @Component({
   selector: 'app-header',
@@ -9,5 +10,5 @@ import { ButtonComponent } from "../button/button.component";
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-
+  readonly Links = Links;
 }

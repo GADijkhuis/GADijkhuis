@@ -19,3 +19,18 @@
     align-items: center;
     justify-content: center;
 }
+.gap-xs {
+    gap: var(--margin-s);
+}
+.gap-s {
+    gap: var(--margin-s);
+}
+.gap-m {
+    gap: var(--margin-m);
+}
+.gap-l {
+    gap: var(--margin-l);
+}
+.gap-xl {
+    gap: var(--margin-xl);
+}
