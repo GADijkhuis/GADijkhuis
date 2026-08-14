@@ -24,8 +24,23 @@ export abstract class Content {
                 "Supabase for Authentication and Database with RLS policies"
             ],
         },
+        {
+            title: "Boom Legal",
+            description: "Website for law form Boom Legal at Leiden", 
+            link: "https://boomadvocaten.nl/"
+        },
+        {
+            title: "Watersport Drenthe",
+            description: "Website for watersports association Watersport Drenthe at Emmen",
+            link: "https://watersportdrenthe.nl/"
+        }
     ];
     static readonly skip_project_titles: string[] = [
+        "VereniQ",
+        "DijkhuisAppOnline",
+        "GADijkhuis",
+        "Klokking-2026-Beta",
+        "Klokking-2026-Registration-Beta"
     ];
     static readonly skill_appdev = [
         "Swift",

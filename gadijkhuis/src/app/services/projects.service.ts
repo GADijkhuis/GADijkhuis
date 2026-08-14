@@ -15,7 +15,7 @@ interface GitHubRepo {
 })
 export class ProjectsService {
     private readonly http = inject(HttpClient);
-    private readonly apiUrl = `https://api.github.com/users/${Content.github_username}/repos?sort=updated`;
+    private readonly apiUrl = `https://api.github.com/users/${Content.github_username}/repos`;
 
     getProjects(): Observable<Project[]> {
         return this.http.get<GitHubRepo[]>(this.apiUrl).pipe(
