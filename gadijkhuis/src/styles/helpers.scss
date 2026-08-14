@@ -34,3 +34,6 @@
 .gap-xl {
     gap: var(--margin-xl);
 }
+.gap-xxl {
+    gap: calc(var(--margin-xl) + var(--margin-xl));
+}

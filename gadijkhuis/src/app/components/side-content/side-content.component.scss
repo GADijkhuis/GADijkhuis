@@ -1,6 +1,6 @@
 .side-content {
-    align-items: flex-start;
     gap: var(--margin-xl);
+    // min-height: 100vh;
 
     &__aside {
         flex: 0 0 auto;

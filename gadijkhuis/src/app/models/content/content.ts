@@ -1,3 +1,28 @@
 export abstract class Content {
     static readonly about = "Hey! I’m Gideon, an enthusiastic and creative computer science student. I’ve experience in multiple frameworks like the .NET ecosystem, multiple web frameworks and App Development with both Android and iOS. My speciality is building user-friendly and efficient applications. I work both independently and in a team. Currently, I’m studying Computer Science (specialization Software Enginering) at NHL Stenden in Emmen.";
+    static readonly skill_appdev = [
+        "Swift",
+        "Skip.dev",
+        "Flutter",
+        "Kotlin",
+        "Java",
+        "Xamarin.forms",
+        "MAUI",
+        "WinForms",
+        "UWP"
+    ];
+    static readonly skill_webdev = [
+        "ReactJS",
+        "Angular",
+        "ASP.NET",
+        "Typescript",
+        "Javascript",
+        "Laravel",
+        "PHP"
+    ];
+    static readonly skill_db = [
+        "MySQL",
+        "Supabase",
+        "Firebase",
+    ];
 }
