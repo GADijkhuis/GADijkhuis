@@ -1,5 +1,13 @@
+import { Project } from '../project/project';
+
 export abstract class Content {
     static readonly about = "Hey! I’m Gideon, an enthusiastic and creative computer science student. I’ve experience in multiple frameworks like the .NET ecosystem, multiple web frameworks and App Development with both Android and iOS. My speciality is building user-friendly and efficient applications. I work both independently and in a team. Currently, I’m studying Computer Science (specialization Software Enginering) at NHL Stenden in Emmen.";
+    static readonly project = "A mix of personal projects and work I've built for others. Most sync straight from GitHub, some of them are private and are shown without a repository link."
+    static readonly github_username = "GADijkhuis";
+    static readonly projects: Project[] = [
+    ];
+    static readonly skip_project_titles: string[] = [
+    ];
     static readonly skill_appdev = [
         "Swift",
         "Skip.dev",

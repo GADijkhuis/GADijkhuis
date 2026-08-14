@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TagComponent } from "../tag/tag.component";
+import { TagComponent } from "../base/tag/tag.component";
 
 @Component({
   selector: 'app-skill-category',

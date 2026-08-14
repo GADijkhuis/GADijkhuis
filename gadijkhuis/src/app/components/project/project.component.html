@@ -1,0 +1,26 @@
+<div class="card d-flex flex-column gap-s">
+    <h3>
+        {{ project.title }}
+    </h3>
+    @if (project.description) {
+        <p class="tint">
+            {{ project.description }}
+        </p>
+    }
+    @if (project.bulletpoints) {
+        <ul>
+            @for (point of project.bulletpoints; track $index) {
+                <li>
+                    <p class="tint">
+                        {{ point }}
+                    </p>
+                </li>
+            }
+        </ul>
+    }
+    <app-button [to]="project.link" [dark]="true">
+        <img src="/assets/icons/GH_white.svg" alt="GitHub"/>
+        View on GitHub
+    </app-button>    
+    
+</div>

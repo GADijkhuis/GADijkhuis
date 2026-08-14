@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Content } from '../../models/content/content';
+import { Content } from '../../../models/content/content';
 
 @Component({
   selector: 'app-contentblock-about',
