@@ -2,5 +2,5 @@ export interface Project {
     title: string;
     description?: string;
     bulletpoints?: string[];
-    link: string;
+    link?: string;
 }

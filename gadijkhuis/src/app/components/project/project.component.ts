@@ -10,4 +10,8 @@ import { ButtonComponent } from '../base/button/button.component';
 })
 export class ProjectComponent {
   @Input({ required: true }) project!: Project;
+
+  get isButtonGitHub(): boolean {
+    return this.project?.link?.includes('github') ?? false;
+  }
 }

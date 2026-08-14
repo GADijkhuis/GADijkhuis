@@ -18,9 +18,14 @@
             }
         </ul>
     }
-    <app-button [to]="project.link" [dark]="true">
-        <img src="/assets/icons/GH_white.svg" alt="GitHub"/>
-        View on GitHub
-    </app-button>    
-    
+    @if (project.link) {
+        <app-button [to]="project.link" [dark]="true">
+            <img [src]="`/assets/icons/${ isButtonGitHub ? 'GH_white.svg' : 'Ext.svg'}`" alt="GitHub"/>
+            {{
+                isButtonGitHub ?
+                "View on GitHub" :
+                "Open project"
+            }}
+        </app-button>    
+    }
 </div>
