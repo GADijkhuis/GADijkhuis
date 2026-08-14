@@ -1,7 +1,7 @@
 {
   "name": "gadijkhuis",
   "version": "0.0.0",
-  "license":"MIT",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -44,5 +44,8 @@
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
     "typescript": "~5.9.2"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true
   }
 }

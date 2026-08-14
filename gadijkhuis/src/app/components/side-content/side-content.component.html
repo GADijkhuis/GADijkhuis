@@ -1,0 +1,31 @@
+<div class="side-content d-flex">
+    <aside class="side-content__aside">
+        <div class="side-content__sticky">
+            <div class="d-flex flex-column gap-m">
+                <div>
+                    <img ngSrc="/assets/images/Profile.png" alt="Profile" [width]="96" [height]="96"/>
+                    <h2>
+                        Gideon Dijkhuis
+                    </h2>
+                    <h4 class="tint">
+                        Student Software Engineering
+                    </h4>
+                </div>
+                <div class="d-flex flex-column gap-s">
+                    <app-profile-button [to]="'mailto:' + Links.MAIL" iconSrc="/assets/icons/Mail.svg" iconAlt="mail">
+                        {{ Links.MAIL }}
+                    </app-profile-button>
+                    <app-profile-button [to]="Links.GITHUB" iconSrc="/assets/icons/GH.svg" iconAlt="GH">
+                        GADijkhuis
+                    </app-profile-button>
+                    <app-profile-button [to]="Links.LINKEDIN" iconSrc="/assets/icons/LinkedIn.svg" iconAlt="LinkedIn">
+                        gideon-dijkhuis-69a18628a
+                    </app-profile-button>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="side-content__content">
+        <ng-content/>
+    </div>
+</div>

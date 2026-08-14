@@ -1,0 +1,20 @@
+.side-content {
+    align-items: flex-start;
+    gap: var(--margin-xl);
+
+    &__aside {
+        flex: 0 0 auto;
+        width: 280px;
+    }
+
+    &__sticky {
+        position: sticky;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__content {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+}
