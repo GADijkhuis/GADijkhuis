@@ -8,7 +8,10 @@
 
     &__aside {
         flex: 0 0 auto;
-        width: 100%;
+        width: fit-content;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
 
         @media (min-width: 768px) {
             width: 280px;
