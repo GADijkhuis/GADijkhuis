@@ -4,10 +4,11 @@ import { SideContentComponent } from "../../components/side-content/side-content
 import { ContentblockAboutComponent } from "../../components/contentblocks/contentblock-about/contentblock-about.component";
 import { ContentblockSkillsComponent } from "../../components/contentblocks/contentblock-skills/contentblock-skills.component";
 import { ContentblockProjectsComponent } from "../../components/contentblocks/contentblock-projects/contentblock-projects.component";
+import { ContentblockFooterComponent } from "../../components/contentblocks/contentblock-footer/contentblock-footer.component";
 
 @Component({
   selector: 'app-home-layout.component',
-  imports: [HeaderComponent, SideContentComponent, ContentblockAboutComponent, ContentblockSkillsComponent, ContentblockProjectsComponent],
+  imports: [HeaderComponent, SideContentComponent, ContentblockAboutComponent, ContentblockSkillsComponent, ContentblockProjectsComponent, ContentblockFooterComponent],
   templateUrl: './home-layout.component.html',
   styleUrl: './home-layout.component.scss',
 })

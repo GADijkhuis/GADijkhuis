@@ -1,16 +1,32 @@
 .side-content {
     gap: var(--margin-xl);
-    // min-height: 100vh;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
 
     &__aside {
         flex: 0 0 auto;
-        width: 280px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            position: sticky;
+            height: 100dvh;
+        }
     }
 
     &__sticky {
-        position: sticky;
-        top: 50%;
-        transform: translateY(-50%);
+        @media (min-width: 768px) {
+            position: sticky;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+        }
     }
 
     &__content {
