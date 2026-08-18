@@ -7,7 +7,7 @@ export abstract class Content {
     static readonly projects: Project[] = [
         {
             title: "Klokking",
-            description: "Timeregistration system Klokking for canoesprint/canoemarathon with (national) registration system.",
+            description: "Timeregistration system Klokking for canoesprint / canoemarathon with (national) registration system.",
             bulletpoints: [
                 "Made with React Native using FluentUI Components",
                 "Supabase for Authentication and Database with RLS policies",
@@ -26,7 +26,7 @@ export abstract class Content {
         },
         {
             title: "Boom Legal",
-            description: "Website for law form Boom Legal at Leiden", 
+            description: "Website for law form Boom Legal at Leiden",
             link: "https://boomadvocaten.nl/"
         },
         {
