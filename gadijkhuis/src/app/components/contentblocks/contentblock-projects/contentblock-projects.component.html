@@ -1,0 +1,22 @@
+<div class="d-flex flex-column gap-s">
+    <h2 class="tint">
+        Projects
+    </h2>
+    <p>
+        {{ Content.project }}
+    </p>
+    <div class="d-flex flex-column gap-s">
+        @if (isLoading()) {
+            <app-project-skeleton/>
+            <app-project-skeleton/>
+        }
+        @else if (errorMessage()) {
+          <p class="tint">{{ errorMessage() }}</p>
+        }
+        @else {
+            @for (project of projects(); track $index) {
+                <app-project [project]="project"/>
+            }
+        }
+    </div>
+</div>

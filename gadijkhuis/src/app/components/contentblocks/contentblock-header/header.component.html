@@ -1,0 +1,33 @@
+<div class="header d-flex flex-column flex-center">
+    <div class="header__container d-flex flex-column flex-align-center gap-m">
+        <img ngSrc="/assets/images/GADijkhuis.svg"
+        alt="GADijkhuis" [width]="80" [height]="56"/>
+        <h1>GADijkhuis</h1>
+        <div class="d-flex flex-center gap-s">
+            <app-button [to]="Links.GITHUB">
+                <img src="/assets/icons/GH.svg" alt="GitHub"/>
+                GitHub
+            </app-button>
+            <app-button [to]="Links.LINKEDIN">
+                <img src="/assets/icons/LinkedIn.svg" alt="Linkedin"/>
+                LinkedIn
+            </app-button>
+        </div>
+    </div>
+
+    <div class="header__pill d-flex flex-center gap-m" [class.header__pill--visible]="isPill()">
+      <div class="d-flex flex-center gap-s">
+        <img ngSrc="/assets/images/GADijkhuis.svg"
+        alt="GADijkhuis" [width]="16" [height]="16"/>
+        <p>GADijkhuis</p>
+      </div>
+      <div class="d-flex flex-center gap-s">
+        <a [href]="Links.GITHUB" target="_blank" rel="noopener">
+          <img src="/assets/icons/GH.svg" alt="GitHub" [width]="16" [height]="16"/>
+        </a>
+        <a [href]="Links.LINKEDIN" target="_blank" rel="noopener">
+          <img src="/assets/icons/LinkedIn.svg" alt="GitHub" [width]="16" [height]="16"/>
+        </a>
+      </div>
+    </div>
+</div>

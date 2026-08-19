@@ -1,0 +1,27 @@
+.btn {
+    padding: var(--margin-s);
+
+    border-radius: var(--border-r-s);
+
+    background-color: var(--background-secondary);
+    color: var(--text-secondary);
+
+    width: fit-content;
+
+    transition: .2s;
+
+    &:hover {
+      filter: brightness(0.98);
+      box-shadow: var(--background-tint) 0px 0px 2px;
+    }
+
+    &__dark {
+        background-color: var(--background-tint);
+        color: var(--text-tint);
+
+        &:hover {
+          filter: brightness(1.15);
+          box-shadow: var(--background-primary) 0px 0px 6px;
+        }
+    }
+}

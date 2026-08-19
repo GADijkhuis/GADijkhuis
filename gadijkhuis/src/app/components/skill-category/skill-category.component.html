@@ -1,0 +1,10 @@
+<div>
+    <p>{{ title }}</p>
+    <div class="skill-items d-flex gap-s">
+        @for (skill of items; track $index) {
+            <app-tag>
+                {{ skill }}
+            </app-tag>
+        }
+    </div>
+</div>

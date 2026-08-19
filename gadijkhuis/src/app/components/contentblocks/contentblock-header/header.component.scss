@@ -1,0 +1,33 @@
+.header {
+    height: 60vh;
+
+    &__pill {
+        position: fixed;
+        top: var(--margin-m);
+        left: 50%;
+
+        padding: var(--margin-xs) var(--margin-s);
+        border-radius: var(--border-r-pill);
+
+        background-color: var(--background-secondary);
+        box-shadow: var(--background-tint) 0px 0px 2px;
+
+        opacity: 0;
+        pointer-events: none;
+        z-index: 1;
+
+        transform: translate(-50%, -16px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+
+        a {
+          display: flex;
+          flex-direction: center;
+        }
+
+        &--visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translate(-50%, 0);
+        }
+    }
+}

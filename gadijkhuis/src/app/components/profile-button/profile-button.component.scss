@@ -1,0 +1,24 @@
+.profile-button {
+  text-align: left;
+
+  .circle {
+      background-color: var(--background-secondary);
+      border-radius: 50%;
+      padding: var(--margin-xs);
+      width: 20px;
+      height: 20px;
+      transition: .2s;
+
+      img {
+          width: 16px;
+          height: 16px;
+          margin: calc(var(--margin-xs)/2);
+      }
+  }
+
+  &:hover {
+    .circle {
+      box-shadow: var(--background-tint) 0px 0px 2px;
+    }
+  }
+}
