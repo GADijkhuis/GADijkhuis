@@ -1,0 +1,62 @@
+.card {
+    background-color: var(--background-secondary);
+    border-radius: var(--border-r-l);
+    padding: var(--margin-m);
+
+    ul, li {
+        display: flex;
+        flex-direction: column;
+        gap: var(--margin-s);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.skeleton-bar {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: var(--border-r-s);
+    background-color: color-mix(in srgb, var(--background-tint) 18%, transparent);
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        transform: translateX(-100%);
+        background: linear-gradient(
+            90deg,
+            transparent,
+            color-mix(in srgb, var(--background-primary) 45%, transparent),
+            transparent
+        );
+        animation: skeleton-shimmer 1.6s ease-in-out infinite;
+    }
+}
+
+.skeleton-title {
+    width: 45%;
+    height: var(--font-m);
+}
+
+.skeleton-text {
+    width: 90%;
+    height: var(--font-s);
+
+    &--short {
+        width: 60%;
+    }
+}
+
+.skeleton-button {
+    width: 140px;
+    height: calc(var(--font-s) + (var(--margin-s) * 2));
+    border-radius: var(--border-r-s);
+}
+
+@keyframes skeleton-shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}

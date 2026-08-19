@@ -1,0 +1,18 @@
+.tag {
+    padding: var(--margin-s);
+    border-radius: var(--border-r-s);
+    background-color: var(--background-secondary);
+
+    transition: .2s;
+
+    cursor: default;
+
+    p {
+        color: var(--text-secondary);
+    }
+
+    &:hover {
+      // transform: scale(1.05);
+      box-shadow: var(--background-tint) 0px 0px 2px;
+    }
+}

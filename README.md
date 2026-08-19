@@ -1,6 +1,5 @@
 # 💫 About Me:
-My name is Gideon, a student Information Technology at NHL Stenden in Emmen.<br>I'm doing a lot of projects in different frameworks, like Flutter,  UWP, .net MAUI and HTML/PHP.<br>Later on, I want to start working in other .NET frameworks, like ASP.NET and .NET MAUI Blazor.<br>
-
+Hey! I’m Gideon, an enthusiastic and creative computer science student. I’ve experience in multiple frameworks like the .NET ecosystem, multiple web frameworks and App Development with both Android and iOS. My speciality is building user-friendly and efficient applications. I work both independently and in a team. Currently, I’m studying Computer Science (specialization Software Enginering) at NHL Stenden in Emmen.
 
 ## 🌐 Socials:
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/gideon.dijkhuis) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/g_dijkhuis) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gideon-dijkhuis-69a18628a/)
@@ -15,5 +14,3 @@ My name is Gideon, a student Information Technology at NHL Stenden in Emmen.<br>
 
 ---
 [![](https://visitcount.itsvg.in/api?id=GADijkhuis&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->

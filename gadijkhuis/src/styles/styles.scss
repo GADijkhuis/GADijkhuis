@@ -1,0 +1,10 @@
+@import './variables.scss';
+@import './fonts.scss';
+@import './helpers.scss';
+@import './base.scss';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-primary);
+}

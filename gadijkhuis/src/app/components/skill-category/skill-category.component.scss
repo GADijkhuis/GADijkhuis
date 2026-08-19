@@ -1,0 +1,11 @@
+.skill-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    @media (min-width: 768px) {
+        flex-wrap: wrap;
+        overflow-x: visible;
+    }
+}

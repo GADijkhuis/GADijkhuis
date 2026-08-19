@@ -1,0 +1,39 @@
+//Flex classes
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-align-center {
+    align-items: center;
+}
+.flex-justify-center {
+    justify-content: center;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gap-xs {
+    gap: var(--margin-s);
+}
+.gap-s {
+    gap: var(--margin-s);
+}
+.gap-m {
+    gap: var(--margin-m);
+}
+.gap-l {
+    gap: var(--margin-l);
+}
+.gap-xl {
+    gap: var(--margin-xl);
+}
+.gap-xxl {
+    gap: calc(var(--margin-xl) + var(--margin-xl));
+}

@@ -1,0 +1,9 @@
+.card {
+    background-color: var(--background-secondary);
+    border-radius: var(--border-r-l);
+    padding: var(--margin-m);
+
+    ul, li {
+        color: var(--text-secondary) !important;
+    }
+}
