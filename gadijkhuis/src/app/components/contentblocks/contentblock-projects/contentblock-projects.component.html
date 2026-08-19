@@ -6,8 +6,17 @@
         {{ Content.project }}
     </p>
     <div class="d-flex flex-column gap-s">
-        @for (project of projects(); track $index) {
-            <app-project [project]="project"/>
+        @if (isLoading()) {
+            <app-project-skeleton/>
+            <app-project-skeleton/>
+        }
+        @else if (errorMessage()) {
+          <p class="tint">{{ errorMessage() }}</p>
+        }
+        @else {
+            @for (project of projects(); track $index) {
+                <app-project [project]="project"/>
+            }
         }
     </div>
 </div>

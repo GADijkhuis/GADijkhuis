@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Project } from '../../models/project/project';
-import { ButtonComponent } from '../base/button/button.component';
+import { Project } from '../../../models/project/project';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-project',

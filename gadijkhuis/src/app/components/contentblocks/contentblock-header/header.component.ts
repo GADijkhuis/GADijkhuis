@@ -17,7 +17,7 @@ export class HeaderComponent {
 
   constructor() {
     afterNextRender(() => {
-      const onScroll = () => this.isPill.set(window.scrollY > window.innerHeight * 0.35);
+      const onScroll = () => this.isPill.set(window.scrollY > window.innerHeight * 0.4);
       onScroll();
 
       window.addEventListener('scroll', onScroll, { passive: true });
