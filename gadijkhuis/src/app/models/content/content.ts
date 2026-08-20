@@ -13,7 +13,7 @@ export abstract class Content {
                 "Supabase for Authentication and Database with RLS policies",
                 "Using Electron for running on Windows and macOS devices"
             ],
-            link: "https://klokking.nl/"
+            homepage: "https://klokking.nl/"
         },
         {
             title: "Dijkhuis",
@@ -27,12 +27,12 @@ export abstract class Content {
         {
             title: "Boom Legal",
             description: "Website for law form Boom Legal at Leiden",
-            link: "https://boomadvocaten.nl/"
+            homepage: "https://boomadvocaten.nl/"
         },
         {
             title: "Watersport Drenthe",
             description: "Website for watersports association Watersport Drenthe at Emmen",
-            link: "https://watersportdrenthe.nl/"
+            homepage: "https://watersportdrenthe.nl/"
         }
     ];
     static readonly skip_project_titles: string[] = [
