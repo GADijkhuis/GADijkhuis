@@ -1,0 +1,10 @@
+<div class="language-toggle">
+  <span class="language-toggle__flag" aria-hidden="true">{{ currentFlag }} </span>
+  <select class="language-toggle__select" (change)="onChange($event)">
+    @for (code of codes; track code) {
+      <option [value]="code" [selected]="isActive(code)">
+        {{ languageService.getFlagEmoji(code) }} {{ code.toUpperCase() }}
+      </option>
+    }
+  </select>
+</div>

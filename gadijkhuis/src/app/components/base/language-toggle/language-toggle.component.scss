@@ -1,0 +1,41 @@
+.language-toggle {
+    position: relative;
+    width: 16px;
+    height: 16px;
+
+    border-radius: var(--border-r-pill);
+    border: 1px var(--background-tint) solid ;
+
+    &__flag {
+        position: absolute;
+        inset: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 12px;
+        pointer-events: none;
+    }
+
+    &__select {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        border: none;
+        outline: none;
+        background: transparent;
+        color: transparent;
+
+        cursor: pointer;
+
+        option {
+            color: initial;
+        }
+    }
+}

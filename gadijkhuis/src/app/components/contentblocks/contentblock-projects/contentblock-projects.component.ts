@@ -3,6 +3,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { ProjectsService } from '../../../services/projects.service';
 import { Project } from '../../../models/project/project';
 import { Content } from '../../../models/content/content';
+import { ContentService } from '../../../services/content.service';
 import { ProjectComponent } from '../../base/project/project.component';
 import { ProjectSkeletonComponent } from '../../base/project-skeleton/project-skeleton.component';
 
@@ -14,6 +15,7 @@ import { ProjectSkeletonComponent } from '../../base/project-skeleton/project-sk
 })
 export class ContentblockProjectsComponent implements OnInit {
   readonly Content = Content;
+  readonly contentService = inject(ContentService);
 
   private readonly projectsService = inject(ProjectsService);
 

@@ -3,7 +3,7 @@
         Projects
     </h2>
     <p>
-        {{ Content.project }}
+        {{ contentService.resolve(Content.project) }}
     </p>
     <div class="d-flex flex-column gap-s">
         @if (isLoading()) {
