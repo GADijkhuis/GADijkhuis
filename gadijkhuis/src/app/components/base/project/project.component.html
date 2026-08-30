@@ -18,14 +18,19 @@
             }
         </ul>
     }
-    @if (project.link) {
-        <app-button [to]="project.link" [dark]="true">
-            <img [src]="`/assets/icons/${ isButtonGitHub ? 'GH_white.svg' : 'Ext.svg'}`" alt="GitHub"/>
-            {{
-                isButtonGitHub ?
-                "View on GitHub" :
-                "Open project"
-            }}
-        </app-button>    
-    }
+    <div class="d-flex gap-s flex-wrap">
+      @if (project.link) {
+          <app-button [to]="project.link" [dark]="true">
+              <img [src]="`/assets/icons/GH_white.svg`" alt="GitHub"/>
+              View on GitHub
+          </app-button>
+      }
+
+      @if (project.homepage) {
+        <app-button [to]="project.homepage" [dark]="true">
+            <img [src]="`/assets/icons/Ext.svg`" alt="Link"/>
+            Open project
+        </app-button>
+      }
+  </div>
 </div>

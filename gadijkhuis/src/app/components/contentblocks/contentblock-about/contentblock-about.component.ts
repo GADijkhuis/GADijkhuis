@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Content } from '../../../models/content/content';
+import { ContentService } from '../../../services/content.service';
 
 @Component({
   selector: 'app-contentblock-about',
@@ -9,4 +10,5 @@ import { Content } from '../../../models/content/content';
 })
 export class ContentblockAboutComponent {
   readonly Content = Content;
+  readonly contentService = inject(ContentService);
 }

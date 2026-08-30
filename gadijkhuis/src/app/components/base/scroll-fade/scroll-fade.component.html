@@ -1,0 +1,5 @@
+<div class="scroll-container">
+    <ng-content></ng-content>
+</div>
+<div class="fade fade-left" [class.visible]="canScrollLeft()"></div>
+<div class="fade fade-right" [class.visible]="canScrollRight()"></div>

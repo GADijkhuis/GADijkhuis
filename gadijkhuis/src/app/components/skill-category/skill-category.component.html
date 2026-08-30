@@ -1,10 +1,10 @@
 <div>
     <p>{{ title }}</p>
-    <div class="skill-items d-flex gap-s">
+    <app-scroll-fade>
         @for (skill of items; track $index) {
             <app-tag>
                 {{ skill }}
             </app-tag>
         }
-    </div>
+    </app-scroll-fade>
 </div>

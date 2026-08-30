@@ -1,11 +1,12 @@
 import { Component, DestroyRef, afterNextRender, inject, signal } from '@angular/core';
 import { NgOptimizedImage } from "@angular/common";
 import { ButtonComponent } from "../../base/button/button.component";
+import { LanguageToggleComponent } from "../../base/language-toggle/language-toggle.component";
 import { Links } from "../../../models/links/links";
 
 @Component({
   selector: 'app-header',
-  imports: [NgOptimizedImage, ButtonComponent],
+  imports: [NgOptimizedImage, ButtonComponent, LanguageToggleComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
