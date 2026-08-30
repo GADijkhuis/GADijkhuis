@@ -1,0 +1,47 @@
+:host {
+    position: relative;
+    display: block;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    gap: var(--margin-s);
+    padding: var(--margin-s) 0;
+
+    @media (min-width: 768px) {
+        flex-wrap: wrap;
+        overflow-x: visible;
+    }
+}
+
+.fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: var(--margin-xl);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .2s ease;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    &.visible {
+        opacity: 1;
+    }
+}
+
+.fade-left {
+    left: 0;
+    background: linear-gradient(to right, var(--background-primary), transparent);
+}
+
+.fade-right {
+    right: 0;
+    background: linear-gradient(to left, var(--background-primary), transparent);
+}

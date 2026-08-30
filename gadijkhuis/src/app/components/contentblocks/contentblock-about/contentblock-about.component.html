@@ -2,7 +2,5 @@
     <h2 class="tint">
         About
     </h2>
-    <p>
-        {{ Content.about }}
-    </p>
+    <p [innerHTML]="contentService.resolve(Content.about)"></p>
 </div>

@@ -1,6 +1,8 @@
 .side-content {
     gap: var(--margin-xl);
     flex-direction: column;
+    max-width: 1400px;
+    margin: auto;
 
     @media (min-width: 768px) {
         flex-direction: row;

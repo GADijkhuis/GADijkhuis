@@ -19,6 +19,9 @@
     align-items: center;
     justify-content: center;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .gap-xs {
     gap: var(--margin-s);
 }

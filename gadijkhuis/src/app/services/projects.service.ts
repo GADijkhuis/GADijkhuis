@@ -5,9 +5,10 @@ import { Project } from '../models/project/project';
 import { Content } from '../models/content/content';
 
 interface GitHubRepo {
-    name: string;
-    description: string | null;
-    html_url: string;
+  name: string;
+  description: string | null;
+  html_url: string;
+  homepage?: string;
 }
 
 @Injectable({
@@ -22,9 +23,10 @@ export class ProjectsService {
             map((repos) => repos
                 .filter((repo) => !Content.skip_project_titles.includes(repo.name))
                 .map((repo): Project => ({
-                    title: repo.name,
-                    description: repo.description ?? undefined,
-                    link: repo.html_url,
+                  title: repo.name,
+                  description: repo.description ?? undefined,
+                  link: repo.html_url,
+                  homepage: repo.homepage
                 }))),
             map((fetchedProjects) => [...Content.projects, ...fetchedProjects]),
         );
