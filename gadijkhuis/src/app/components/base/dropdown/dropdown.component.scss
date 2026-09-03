@@ -1,0 +1,22 @@
+:host {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown__trigger {
+    all: unset;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.dropdown__panel {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 2;
+
+    &--left {
+        right: auto;
+        left: 0;
+    }
+}
