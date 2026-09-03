@@ -45,13 +45,8 @@ export class LanguageService {
     return (parts.length > 1 ? parts[1] : parts[0]).toLowerCase();
   }
 
-  getFlagEmoji(code: string): string {
-    const base = 0x1f1e6; // regional indicator symbol letter A
-    return code
-      .toUpperCase()
-      .split('')
-      .map((c) => String.fromCodePoint(base + (c.charCodeAt(0) - 65)))
-      .join('');
+  getFlagIconPath(code: string): string {
+    return `/assets/icons/flags/${code}.svg`;
   }
 
   private isLocalized(value: unknown): value is Localized {

@@ -1,10 +1,24 @@
-<div class="language-toggle">
-  <span class="language-toggle__flag" aria-hidden="true">{{ currentFlag }} </span>
-  <select class="language-toggle__select" (change)="onChange($event)">
+<app-dropdown #dropdown class="language-toggle" ariaLabel="Change language">
+  <span dropdown-trigger class="language-toggle__trigger" [class.language-toggle__trigger--open]="dropdown.isOpen()">
+    <img class="language-toggle__flag" [src]="languageService.getFlagIconPath(currentCode)" [alt]="currentCode" width="16" height="16" />
+    <span class="language-toggle__code">{{ currentCode.toUpperCase() }}</span>
+    <svg class="language-toggle__chevron" [class.language-toggle__chevron--open]="dropdown.isOpen()" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true">
+      <path d="M1,2.5 L4,5.5 L7,2.5" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </span>
+
+  <ul dropdown-panel class="language-toggle__menu" role="listbox">
     @for (code of codes; track code) {
-      <option [value]="code" [selected]="isActive(code)">
-        {{ languageService.getFlagEmoji(code) }} {{ code.toUpperCase() }}
-      </option>
+      <li
+        role="option"
+        class="language-toggle__option"
+        [class.language-toggle__option--active]="isActive(code)"
+        [attr.aria-selected]="isActive(code)"
+        (click)="select(code)"
+      >
+        <img class="language-toggle__flag" [src]="languageService.getFlagIconPath(code)" [alt]="code" width="16" height="16" />
+        <span>{{ code.toUpperCase() }}</span>
+      </li>
     }
-  </select>
-</div>
+  </ul>
+</app-dropdown>
