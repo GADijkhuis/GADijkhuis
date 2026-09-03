@@ -1,0 +1,16 @@
+<button
+  type="button"
+  class="dropdown__trigger"
+  aria-haspopup="listbox"
+  [attr.aria-expanded]="isOpen()"
+  [attr.aria-label]="ariaLabel ?? null"
+  (click)="toggle()"
+>
+  <ng-content select="[dropdown-trigger]" />
+</button>
+
+@if (isOpen()) {
+  <div class="dropdown__panel" [class.dropdown__panel--left]="align === 'left'" (click)="onPanelClick()">
+    <ng-content select="[dropdown-panel]" />
+  </div>
+}
